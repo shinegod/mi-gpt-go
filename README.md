@@ -114,4 +114,24 @@ docker-compose config
 
 ## 📖 更多信息
 
-详细文档请查看项目根目录的 [README.md](../README.md) 
+更多功能和配置说明请直接在 Web 管理面板中探索，或查看源代码注释。
+
+## 🙏 致谢
+
+- 感谢 [mi-gpt](https://github.com/idootop/mi-gpt) 原项目的启发
+- 感谢 [xiaoai-tts](https://github.com/YoungBreezeM/xiaoai-tts) 第三方库的支持
+- 感谢所有贡献者和用户的支持
+
+## 📜 许可证
+
+本项目基于 [MIT License](LICENSE) 开源。
+
+---
+
+<div align="center">
+
+如果这个项目对您有帮助，请给我们一个 ⭐ Star！
+
+Made with ❤️ by MiGPT-Go Team
+
+</div> 
