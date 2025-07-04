@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiGPT Go 前端测试</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 { color: #409EFF; }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 4px solid #409EFF;
+            background: #f8f9fa;
+        }
+        .route-list {
+            display: grid;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .route-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #e4e7ed;
+        }
+        .icon { margin-right: 10px; font-size: 16px; }
+        .status { 
+            padding: 5px 10px; 
+            border-radius: 4px; 
+            font-size: 12px; 
+            margin-left: auto;
+        }
+        .status.ok { background: #f0f9ff; color: #059669; }
+        .status.warning { background: #fffbeb; color: #d97706; }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #409EFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 5px;
+        }
+        .btn:hover { background: #66b1ff; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🧪 MiGPT Go 前端测试页面</h1>
+        
+        <div class="section">
+            <h3>📍 导航路由测试</h3>
+            <p>以下是前端应该包含的所有导航页面：</p>
+            <div class="route-list">
+                <div class="route-item">
+                    <span class="icon">🏠</span>
+                    <span>仪表盘 (Dashboard)</span>
+                    <span class="status ok">主页</span>
+                </div>
+                <div class="route-item">
+                    <span class="icon">⚙️</span>
+                    <span>配置管理 (Config)</span>
+                    <span class="status ok">必需</span>
+                </div>
+                <div class="route-item">
+                    <span class="icon">🎤</span>
+                    <span>音箱控制 (Speaker)</span>
+                    <span class="status ok">功能</span>
+                </div>
+                <div class="route-item">
+                    <span class="icon">⚡</span>
+                    <span>并发处理 (Concurrent)</span>
+                    <span class="status ok">监控</span>
+                </div>
+                <div class="route-item">
+                    <span class="icon">📋</span>
+                    <span>系统日志 (Logs)</span>
+                    <span class="status ok">调试</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>🔗 API端点测试</h3>
+            <p>点击下面的链接测试后端API是否正常工作：</p>
+            <a href="/api/v1/config" class="btn" target="_blank">配置API</a>
+            <a href="/api/v1/system/status" class="btn" target="_blank">系统状态</a>
+            <a href="/api/v1/speaker/status" class="btn" target="_blank">音箱状态</a>
+            <a href="/api/v1/concurrent/status" class="btn" target="_blank">并发状态</a>
+        </div>
+
+        <div class="section">
+            <h3>🚀 启动说明</h3>
+            <p><strong>开发环境启动：</strong></p>
+            <pre style="background: #f8f8f8; padding: 10px; border-radius: 4px;">
+cd frontend
+npm install
+npm run dev
+            </pre>
+            <p><strong>生产环境构建：</strong></p>
+            <pre style="background: #f8f8f8; padding: 10px; border-radius: 4px;">
+cd frontend
+npm run build
+            </pre>
+        </div>
+
+        <div class="section">
+            <h3>📝 问题排查</h3>
+            <div class="route-list">
+                <div class="route-item">
+                    <span>✅ 后端API正常运行</span>
+                    <span class="status ok">8080端口</span>
+                </div>
+                <div class="route-item">
+                    <span>⚠️ 前端需要独立启动</span>
+                    <span class="status warning">开发模式</span>
+                </div>
+                <div class="route-item">
+                    <span>✅ 导航菜单已修复</span>
+                    <span class="status ok">图标映射</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 添加一些简单的交互
+        console.log('🎉 MiGPT Go 前端测试页面已加载');
+        console.log('📍 当前URL:', window.location.href);
+        console.log('🔧 如有问题，请检查控制台日志');
+    </script>
+</body>
+</html> 

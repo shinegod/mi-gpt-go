@@ -1,0 +1,65 @@
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+app.db
+data/
+
+# 日志文件
+*.log
+logs/
+
+# Go 相关
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+mi-gpt-go
+mi-gpt-go.exe
+
+# 测试文件
+*.test
+*.out
+*.cover
+
+# 依赖文件
+vendor/
+
+# 前端依赖
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# 临时文件
+tmp/
+temp/
+.tmp
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS 生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# 备份文件
+*.bak
+*.backup
+
+# Go 模块代理
+go.sum.bak 
